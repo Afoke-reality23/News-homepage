@@ -1,4 +1,4 @@
-import leftBarArray from "./leftBarArray";
+import leftBarArray from "./leftBarArray.js";
 export default function LeftBar() {
   const leftBars = leftBarArray.map((section, index) => {
     return (

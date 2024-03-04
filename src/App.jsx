@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   const [menuBar, setMenuBar] = useState(true);
   return (
-    <>
+    <div className="main-body">
       <Header
         menuState={menuBar}
         handleOpen={() => {
@@ -23,7 +23,7 @@ function App() {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

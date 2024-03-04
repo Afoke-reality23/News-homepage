@@ -1,4 +1,4 @@
-import FooterData from "./FooterData";
+import FooterData from "./FooterData.js";
 console.log(FooterData[0].image);
 export default function Footer() {
   const footer = FooterData.map((data) => {
@@ -6,7 +6,7 @@ export default function Footer() {
       <div className={data.classes} key={data.tag}>
         <img src={data.image} alt="" />
         <div>
-          <div>{data.tag}</div>
+          <h2>{data.tag}</h2>
           <h3>{data.heading}</h3>
           <p>{data.para}</p>
         </div>
@@ -14,9 +14,9 @@ export default function Footer() {
     );
   });
   return (
-    <>
+    <div className="footer">
       {footer}
-      <img src="../assets/images/image-retro-pics.jpg" alt="" />
-    </>
+      {/* <img src="../assets/images/image-retro-pics.jpg" alt="" /> */}
+    </div>
   );
 }
