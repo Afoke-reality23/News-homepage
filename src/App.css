@@ -5,11 +5,23 @@
 }
 body {
   margin: 1rem;
+  overflow-y: scroll;
 }
-
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 50px;
+  background-color: #fff;
+  /* margin-left: 1em; */
+  padding: 0 1em;
+}
+header .logo {
+  max-width: 100%;
 }
 .open {
   width: 40px;
