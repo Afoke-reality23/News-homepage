@@ -148,6 +148,10 @@ button {
   body {
     margin: 5em;
   }
+  .header {
+    padding: 0 4.5em;
+    /* border: 2px solid red; */
+  }
   .open,
   .close,
   .mobile-nav {
